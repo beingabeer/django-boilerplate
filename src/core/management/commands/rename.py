@@ -5,7 +5,7 @@ class Command(BaseCommand):
     help = "Renames a Django Project"
 
     def add_arguments(self, parser):
-        parser.add_arguments('new_project_name', type=str, help='The new Django Project name')
+        parser.add_argument('new_project_name', type=str, help='The new Django Project name')
 
     def handle(self, *args, **kwargs):
         new_project_name = kwargs['new_project_name']
